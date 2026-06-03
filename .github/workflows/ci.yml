@@ -1,0 +1,17 @@
+name: CogShift CI
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install panda3d flake8 pytest
+      - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      - run: pytest tests/ -v

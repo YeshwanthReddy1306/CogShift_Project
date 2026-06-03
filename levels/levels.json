@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Tutorial",
+    "gears": [
+      {"col": 0, "row": 0, "type": "source", "locked": true},
+      {"col": 1, "row": 0, "type": "normal", "locked": false},
+      {"col": 2, "row": 0, "type": "target", "locked": false}
+    ],
+    "edges": [[0,1],[1,2]]
+  },
+  {
+    "name": "Branch",
+    "gears": [
+      {"col":  0, "row": 0, "type": "source", "locked": true},
+      {"col":  1, "row": 0, "type": "normal", "locked": false},
+      {"col":  2, "row": 0, "type": "normal", "locked": false},
+      {"col":  1, "row": 1, "type": "locked", "locked": true},
+      {"col":  2, "row": 1, "type": "target", "locked": false}
+    ],
+    "edges": [[0,1],[1,2],[1,3],[3,4]]
+  },
+  {
+    "name": "Direction Challenge",
+    "gears": [
+      {"col": -2, "row": 0, "type": "source", "locked": true},
+      {"col": -1, "row": 0, "type": "normal", "locked": false},
+      {"col":  0, "row": 0, "type": "locked", "locked": true},
+      {"col":  1, "row": 0, "type": "normal", "locked": false},
+      {"col":  2, "row": 0, "type": "target", "locked": false}
+    ],
+    "edges": [[0,1],[1,2],[2,3],[3,4]]
+  },
+  {
+    "name": "The Cross",
+    "gears": [
+      {"col":  0, "row":  0, "type": "source", "locked": true},
+      {"col":  1, "row":  0, "type": "normal", "locked": false},
+      {"col": -1, "row":  0, "type": "normal", "locked": false},
+      {"col":  0, "row":  1, "type": "normal", "locked": false},
+      {"col":  0, "row": -1, "type": "normal", "locked": false},
+      {"col":  2, "row":  0, "type": "target", "locked": false},
+      {"col": -2, "row":  0, "type": "target", "locked": false},
+      {"col":  0, "row":  2, "type": "target", "locked": false}
+    ],
+    "edges": [[0,1],[0,2],[0,3],[0,4],[1,5],[2,6],[3,7]]
+  },
+  {
+    "name": "Zigzag",
+    "gears": [
+      {"col": 0, "row": 0, "type": "source", "locked": true},
+      {"col": 1, "row": 0, "type": "normal", "locked": false},
+      {"col": 1, "row": 1, "type": "locked", "locked": true},
+      {"col": 2, "row": 1, "type": "normal", "locked": false},
+      {"col": 2, "row": 2, "type": "locked", "locked": true},
+      {"col": 3, "row": 2, "type": "target", "locked": false}
+    ],
+    "edges": [[0,1],[1,2],[2,3],[3,4],[4,5]]
+  }
+]
